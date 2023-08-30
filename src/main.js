@@ -35,5 +35,13 @@ const contact = Route(
   }
 );
 
-const router = Router([home, menu, contact]);
+const router = Router(
+  [home, menu, contact],
+  (link) => {
+    link.classList.add("active");
+  },
+  (link) => {
+    link.classList.remove("active");
+  }
+);
 router.init();

@@ -6,17 +6,33 @@
     <title>Odin Restaurant Page</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/menu">Menu</a></li>
-        <li><a href="/contact">Contact</a></li>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a class="nav-link active" href="/home">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/menu">Menu</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
       </ul>
     </nav>
 
-    <div id="home" class="hide">Home</div>
-    <div id="menu" class="hide">Menu</div>
-    <div id="contact" class="hide">Contact</div>
+    <div id="home">
+      <div class="container">
+        <h1 class="title">Home</h1>
+      </div>
+    </div>
+    <div id="menu" class="hide">
+      <div class="container">
+        <h1 class="title">Menu</h1>
+      </div>
+    </div>
+    <div id="contact" class="hide">
+      <div class="container">
+        <h1 class="title">Contact</h1>
+      </div>
+    </div>
 
     <script type="module" src="./src/main.js"></script>
   </body>
